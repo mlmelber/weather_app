@@ -1,0 +1,14 @@
+body {
+    font-family: sans-serif;
+    background-color: #FDBB34;
+    margin: 0;
+    padding: 0;
+  }
+
+  .headerbox {
+    height: 35px;
+    width: 100vw; 
+    background-color: #FAF8F0;
+
+ 
+}

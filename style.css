@@ -1,24 +1,39 @@
 body {
     font-family: 'Raleway', sans-serif;
-    background-color: #FDBB34;
-    margin: 0;
-    padding: 0;
-  }
-
-  .headerbox {
-    height: 35px;
-    width: 100vw; 
-    margin: 0;
-    padding: 0;
     background-color: #FAF8F0;
+    margin: 0;
+    padding: 0;
   }
 
-  h2 {
+  .maincontainer { 
+    margin: 0;
+    padding: 0;
+    background-color: #FDBB34;
+  }
+
+  h3 {
     text-align: right;
     font-weight: thin;
     letter-spacing: 12px;
 
     font-size: 1.2em;
+  }
+
+  .degree {
+    font-size: 1.5em;
+  }
+
+  .time {
+    font-size: 2em;
+  }
+
+  .borderbox {
+    border: 2px solid #FAF8F0;
+    border-radius: 15px;
+    height: 500px;
+    width: 50vw;
+    margin-top: 0;
+    margin-left: ;
   }
 
   

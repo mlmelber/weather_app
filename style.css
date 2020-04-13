@@ -14,25 +14,37 @@ body {
   .maincontentbox { 
     margin-top: 0;
     padding: 0;
-    background-color: #FDBB34;
+    background: linear-gradient(to bottom, #f5f1e5 29%, #fdbb34 100%);
   }
 
   h3 {
     text-align: right;
     font-weight: thin;
     letter-spacing: 12px;
+    color: #A86A00;
 
     font-size: 1.2em;
     margin: 0;
     padding: 0ex;
   }
 
+  .timeanddegree {
+    display: grid;
+    grid-template-columns: 13fr 1fr;
+    grid-template-rows: 100px;
+
+    margin-top: 0;
+    padding: 0;
+  }
+
   .degree {
     font-size: 1.5em;
+    color: #EFAF42;
   }
 
   .time {
     font-size: 2em;
+    color: #EFAF42;
   }
 
   .borderbox {
@@ -50,6 +62,17 @@ body {
     width: 50vw;
     margin-top: 0;
     margin-right: 25vw;
+  }
+
+  .iconbox {
+    max-width: 25%;
+    max-height: 25%;
+    display: block;
+  }
+
+  .dailyinfo {
+    color:rgb(236, 156, 17);
+    text-align: left;
   }
 
   .weeklyicons {

@@ -19,7 +19,7 @@ body {
 
   h3 {
     text-align: right;
-    font-weight: thin;
+    font-weight: 200;
     letter-spacing: 12px;
     color: #A86A00;
 
@@ -70,15 +70,38 @@ body {
     display: block;
   }
 
+  h1 {
+    font-size: 6vw;
+    font-weight: bolder;
+    color: #EDA831;
+  }
+
   .dailyinfo {
     color:rgb(236, 156, 17);
     text-align: left;
+  }
+
+  .weekbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .daysofweek {
+    color: #FFFFFF;
+    margin-left: 10vw;
+  }
+
+  .hilo {
+    color: #FFFFFF;
+    margin-left: 80vw;
   }
 
   .weeklyicons {
     max-width: 20%;
     max-height: 20%;
     display: block;
+
+    margin-left: 90vw;
   }
 
 

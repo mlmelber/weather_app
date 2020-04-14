@@ -152,8 +152,8 @@ body {
   .highlightbox {
     height: 25px;
     width: 84vw;
-    background-color:#FAF8F0;
-    opacity: 30%;
+    background-color: rgba(253, 253, 253, 0.2);
+    border: 2px solid white;
     border-radius: 15px;
 
     position: absolute;
@@ -306,7 +306,6 @@ body {
       .highlightbox {
         height: 25px;
         width: 55vw;
-        opacity: 30%;
     
         position: absolute;
         margin: 126px;
@@ -458,7 +457,6 @@ body {
       .highlightbox {
         height: 25px;
         width: 82vw;
-        opacity: 30%;
     
         position: absolute;
         margin: 126px;

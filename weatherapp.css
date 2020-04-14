@@ -48,9 +48,10 @@ body {
   }
 
   .daygreeting_morning {
-      font-size: 3.5em;
+      font-size: 4em;
       font-weight: 1000;
-    color: #EFAF42;
+      color: #EFAF42;
+      margin-left: 100px;
   }
 
   .daygreeting_afternoon {
@@ -77,17 +78,8 @@ body {
     margin-left: .9vw;
   }
 
-  .iconbox {
-    max-width: 25%;
-    max-height: 25%;
-    display: block;
-
-    margin-top: 50px;
-    margin-left: 30px;
-  }
-
   .dailytemp {
-    margin-bottom: 50px;
+      position: absolute;
   }
 
   h1 {
@@ -97,8 +89,8 @@ body {
 
     margin: auto;
     padding: auto;
-    margin-left: 8vw;
-    margin-bottom: 0;
+    margin-left: 7vw;
+    margin-top: -180px;
   }
 
   .dailyinfo {

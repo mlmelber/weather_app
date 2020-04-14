@@ -27,13 +27,11 @@ body {
   .timeanddegree {
     display: grid;
     grid-template-columns: 13fr 1fr;
-    grid-template-rows: 100px;
 
     margin-top: 0;
     padding: 0;
-    display: block;
-    margin-block-start: 0;
-    margin-block-end: 0;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 
   .degree {
@@ -80,7 +78,7 @@ body {
   }
 
   .iconbox {
-      margin-left: 40px;
+      margin-left: 3.5vw;
       margin-top: 40px;
   }
 
@@ -104,14 +102,14 @@ body {
   }
 
   h1 {
-    font-size: 6vw;
+    font-size: 6em;
     font-weight: bolder;
     color: #EDA831;
 
     margin: auto;
     padding: auto;
     margin-left: 10vw;
-    margin-top: -180px;
+    margin-top: -190px;
   }
 
   .dailyinfo {
@@ -177,6 +175,109 @@ body {
     .maincontentbox {
       background: linear-gradient(to bottom, #bac2e9 0%, #131527 100%);
     }
+
+    h3 {
+        text-align: center;
+        font-weight: 300;
+        letter-spacing: 12px;
+        color: #303960;
+    
+        font-size: 1.2em;
+        margin: 0;
+        padding: 0ex;
+      }
+
+      .timeanddegree {
+          display: block;
+          padding-left: 500px;
+      }
+    
+
+      .degree {
+        font-size: 1.2em;
+        font-weight: 600;
+        color: #1E2957;
+        margin-bottom: 0;
+      }
+    
+      .time {
+        font-size: 1.2em;
+        font-weight: 600;
+        color: #1E2957;
+        margin-top: 0;
+      }
+
+      .daygreeting_evening {
+        font-size: 4em;
+        font-weight: 1000;
+        color: #FFFFFF;
+        margin-left: 100px;
+      }
+
+      .daygreeting_morning {
+          display: none;
+      }
+
+      .borderbox {
+        height: 460px;
+        width: 52vw;
+        margin-left: 25vw;
+      }
+
+      .whitebox {
+        height: 460px;
+      }
+
+      h1 {
+        font-size: 4em;
+        font-weight: bolder;
+        color: #1E2957;
+    
+        margin: auto;
+        padding: auto;
+        margin-left: 17vw;
+        margin-top: 60px;
+      }
+
+      .dailyinfo {
+        color:#1E2957;
+        text-align: left;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    
+        margin: auto;
+        margin-left: 30vw;
+        margin-top: 120px;
+      }
+    
+      .dailyinfopart1 {
+        margin-bottom: -100px;
+      }
+    
+      .part1 {
+        margin-bottom: 50px;
+      }
+      .part2 {
+        margin-bottom: 50px;
+      }
+
+      .iconbox_yellow {
+          display: none;
+      }
+
+      .weeklyinfo {
+          display: grid;
+          grid-template-columns: 2.75fr 1fr 2fr;
+          margin-left: 8vw;
+      }
+
+
+      .daysofweek {
+        color: #FFFFFF;
+        margin-bottom: 40px;
+        margin-left: 100px;
+      }
+
   }
 
     /* Tablet Styles */
@@ -196,18 +297,24 @@ body {
         padding: 0ex;
       }
 
+      .timeanddegree {
+          display: block;
+          padding-left: 500px;
+      }
+    
+
       .degree {
-        font-size: 1.5em;
+        font-size: 1.2em;
         font-weight: 600;
         color: #F87C56;
-        margin: 0;
+        margin-bottom: 0;
       }
     
       .time {
-        font-size: 2em;
+        font-size: 1.2em;
         font-weight: 600;
         color: #F87C56;
-        margin: 0;
+        margin-top: 0;
       }
 
       .daygreeting_afternoon {
@@ -232,13 +339,13 @@ body {
       }
 
       h1 {
-        font-size: 8vw;
+        font-size: 5em;
         font-weight: bolder;
         color: #F87C56;
     
         margin: auto;
         padding: auto;
-        margin-left: 180px;
+        margin-left: 20vw;
         margin-top: 60px;
       }
 
@@ -266,6 +373,10 @@ body {
 
       .iconbox_yellow {
           display: none;
+      }
+
+      .weeklyinfo {
+          margin-right: 50px;
       }
 
 

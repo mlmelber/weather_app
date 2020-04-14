@@ -46,11 +46,11 @@ body {
     margin: 0;
   }
 
-  .daygreeting_morning {
-      font-size: 4em;
-      font-weight: 1000;
-      color: #EFAF42;
-      margin-left: 100px;
+  .daygreeting {
+    font-size: 4em;
+    font-weight: 1000;
+    color: #EFAF42;
+    margin-left: 100px;
   }
 
   .daygreeting_afternoon {
@@ -211,10 +211,11 @@ body {
       }
 
       .daygreeting_evening {
-        font-size: 4em;
-        font-weight: 1000;
+        display: inline-block;
+        font-size: .3em;
+        font-weight: 50;
         color: #FFFFFF;
-        margin-left: 100px;
+        margin-left: 21vw;
       }
 
       .daygreeting_morning {
@@ -337,10 +338,11 @@ body {
       }
 
       .daygreeting_afternoon {
-        font-size: 4em;
-        font-weight: 1000;
+        display: inline-block;
+        font-size: .5em;
+        font-weight: 50;
         color: #FFFFFF;
-        margin-left: 100px;
+        margin-left: 30vw;
       }
 
       .daygreeting_morning {

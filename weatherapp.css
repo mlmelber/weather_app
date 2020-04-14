@@ -21,7 +21,9 @@ body {
 
     font-size: 1.2em;
     margin: 0;
+    margin-right: 20px;
     padding: 0ex;
+    padding-bottom: 20px;
   }
 
   .timeanddegree {
@@ -185,6 +187,7 @@ body {
   @media screen and (max-width: 767px) {
     .maincontentbox {
       background: linear-gradient(to bottom, #bac2e9 0%, #131527 100%);
+      padding-top: 50px;
     }
 
     h3 {
@@ -193,9 +196,10 @@ body {
         letter-spacing: 12px;
         color: #303960;
     
-        font-size: 1.2em;
+        font-size: 1em;
         margin: 0;
         padding: 0ex;
+        padding-bottom: 20px;
       }
 
       .timeanddegree {
@@ -230,7 +234,8 @@ body {
       }
 
       .daygreeting {
-        margin-left: 10vw;
+        display: inline-block;
+        position: absolute;
       }
 
       .daygreeting_evening {
@@ -238,7 +243,7 @@ body {
         font-size: .3em;
         font-weight: 50;
         color: #FFFFFF;
-        margin-left: 28vw;
+        margin-left: 22vw;
       }
 
       .daygreeting_morning {
@@ -333,6 +338,7 @@ body {
     @media screen and (max-width: 1024px) and (min-width: 768px) {
       .maincontentbox {
         background: linear-gradient(to bottom, #ffe9db 0%, #fa4c17 100%);
+        padding-top: 60px;
       }
 
       h3 {
@@ -343,7 +349,9 @@ body {
     
         font-size: 1.2em;
         margin: 0;
+        margin-left: 2vw;
         padding: 0ex;
+        padding-bottom: 20px;
       }
 
       .timeanddegree {
@@ -375,6 +383,11 @@ body {
 
       .time_afternoon {
         display: inline;
+      }
+
+      .daygreeting {
+        display: inline-block;
+        position: absolute;
       }
 
       .daygreeting_afternoon {

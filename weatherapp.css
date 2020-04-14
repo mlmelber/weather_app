@@ -210,12 +210,16 @@ body {
         margin-top: 0;
       }
 
+      .daygreeting {
+        margin-left: 10vw;
+      }
+
       .daygreeting_evening {
         display: inline-block;
         font-size: .3em;
         font-weight: 50;
         color: #FFFFFF;
-        margin-left: 21vw;
+        margin-left: 28vw;
       }
 
       .daygreeting_morning {
@@ -232,6 +236,12 @@ body {
         height: 460px;
       }
 
+      .iconbox_blue {
+        display: inline-block;
+        margin-left: 5vw;
+        margin-top: 40px;
+      }
+
       h1 {
         font-size: 4em;
         font-weight: bolder;
@@ -239,8 +249,8 @@ body {
     
         margin: auto;
         padding: auto;
-        margin-left: 17vw;
-        margin-top: 60px;
+        margin-left: 22vw;
+        margin-top: -120px;
       }
 
       .dailyinfo {
@@ -359,6 +369,12 @@ body {
         height: 460px;
       }
 
+      .iconbox_pink {
+        display: inline-block;
+        margin-left: 12vw;
+        margin-top: 40px;
+      }
+
       h1 {
         font-size: 5em;
         font-weight: bolder;
@@ -367,7 +383,7 @@ body {
         margin: auto;
         padding: auto;
         margin-left: 20vw;
-        margin-top: 60px;
+        margin-top: -165px;
       }
 
       .dailyinfo {

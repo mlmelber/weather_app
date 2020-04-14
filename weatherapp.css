@@ -9,7 +9,7 @@ body {
   .maincontentbox { 
     margin-top: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #f5f1e5 29%, #ffb829 100%);
+    background: linear-gradient(to bottom, #f5f1e5 29%, #f3a916 100%);
     margin-bottom: 50px;
   }
 
@@ -122,7 +122,10 @@ body {
   }
 
   .weeklyinfo {
-
+      border: none;
+      display: grid;
+      grid-template-columns: 2fr .2fr .2fr;
+      margin-top: 110px;
   }
 
   .highlightbox {
@@ -132,21 +135,16 @@ body {
     opacity: 30%;
   }
 
-  .weekbox {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
 
   .daysofweek {
     color: #FFFFFF;
-    margin-left: 10vw;
-    margin-top: 110px;
     margin-bottom: 40px;
+    margin-left: 150px;
   }
 
   .hilo {
     color: #FFFFFF;
-    margin-left: 80vw;
+    margin-bottom: 40px;
   }
 
   .weeklyicons {
@@ -154,8 +152,7 @@ body {
     max-height: 20%;
     display: block;
 
-    margin-left: 90vw;
-    margin-bottom: 1vh;
+    margin-bottom: 40px;
   }
 
   @media screen and (max-width: 767px) {

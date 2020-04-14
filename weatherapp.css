@@ -95,8 +95,6 @@ body {
       display: none;
   }
 
-
-
   .dailytemp {
       position: absolute;
   }
@@ -142,10 +140,15 @@ body {
   }
 
   .highlightbox {
-    height: 15px;
-    width: 40vw;
+    height: 25px;
+    width: 84vw;
     background-color:#FAF8F0;
     opacity: 30%;
+    border-radius: 15px;
+
+    position: absolute;
+    margin: 123px;
+    margin-left: 138px;
   }
 
 
@@ -265,10 +268,21 @@ body {
           display: none;
       }
 
+      .highlightbox {
+        height: 25px;
+        width: 55vw;
+    
+        position: absolute;
+        margin: 126px;
+        margin-left: 18vw;
+        padding-left: 30px;
+      }
+
       .weeklyinfo {
           display: grid;
           grid-template-columns: 2.75fr 1fr 2fr;
           margin-left: 8vw;
+          line-height: 30px;
       }
 
 
@@ -276,6 +290,10 @@ body {
         color: #FFFFFF;
         margin-bottom: 40px;
         margin-left: 100px;
+      }
+
+      .weeklyicons {
+        line-height: 40px;
       }
 
   }
@@ -320,7 +338,7 @@ body {
       .daygreeting_afternoon {
         font-size: 4em;
         font-weight: 1000;
-        color: #EFAF42;
+        color: #FFFFFF;
         margin-left: 100px;
       }
 
@@ -373,6 +391,15 @@ body {
 
       .iconbox_yellow {
           display: none;
+      }
+
+      .highlightbox {
+        height: 25px;
+        width: 82vw;
+    
+        position: absolute;
+        margin: 126px;
+        margin-left: 85px;
       }
 
       .weeklyinfo {

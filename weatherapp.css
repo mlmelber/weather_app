@@ -26,7 +26,7 @@ body {
 
   .timeanddegree {
     display: grid;
-    grid-template-columns: 13fr 1fr;
+    grid-template-columns: 13fr 2fr;
 
     margin-top: 0;
     padding: 0;
@@ -44,6 +44,14 @@ body {
     font-size: 2em;
     color: #EFAF42;
     margin: 0;
+  }
+
+  .time_afternoon {
+    display: none;
+  }
+
+  .time_evening {
+    display: none;
   }
 
   .daygreeting {
@@ -192,22 +200,33 @@ body {
 
       .timeanddegree {
           display: block;
-          padding-left: 500px;
+          padding-left: 35vw;
+          position: absolute;
+          margin-top: 320px;
+          line-height: 5px;
       }
     
 
       .degree {
-        font-size: 1.2em;
+        font-size: 1em;
         font-weight: 600;
         color: #1E2957;
         margin-bottom: 0;
       }
     
       .time {
-        font-size: 1.2em;
+        font-size: 1em;
         font-weight: 600;
         color: #1E2957;
         margin-top: 0;
+      }
+
+      .time_morning {
+        display: none;
+      }
+
+      .time_evening {
+        display: inline;
       }
 
       .daygreeting {
@@ -329,7 +348,10 @@ body {
 
       .timeanddegree {
           display: block;
-          padding-left: 500px;
+          padding-left: 60vw;
+          position: absolute;
+          margin-top: 330px;
+          line-height: 5px;
       }
     
 
@@ -345,6 +367,14 @@ body {
         font-weight: 600;
         color: #F87C56;
         margin-top: 0;
+      }
+
+      .time_morning {
+        display: none;
+      }
+
+      .time_afternoon {
+        display: inline;
       }
 
       .daygreeting_afternoon {

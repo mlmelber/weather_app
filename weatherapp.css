@@ -206,7 +206,7 @@ body {
           display: block;
           padding-left: 35vw;
           position: absolute;
-          margin-top: 320px;
+          margin-top: 230px;
           line-height: 5px;
       }
     
@@ -253,11 +253,13 @@ body {
       .borderbox {
         height: 460px;
         width: 52vw;
+        margin: auto;
         margin-left: 25vw;
       }
 
       .whitebox {
         height: 460px;
+        margin: auto;
       }
 
       .iconbox_blue {
@@ -282,9 +284,9 @@ body {
         text-align: left;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        width: 30vw;
     
         margin: auto;
-        margin-left: 30vw;
         margin-top: 120px;
       }
     
@@ -357,7 +359,7 @@ body {
           display: block;
           padding-left: 60vw;
           position: absolute;
-          margin-top: 330px;
+          margin-top: 230px;
           line-height: 5px;
       }
     
@@ -402,13 +404,13 @@ body {
       }
 
       .borderbox {
-        height: 460px;
+        height: auto;
         width: 52vw;
         margin-left: 25vw;
       }
 
       .whitebox {
-        height: 460px;
+        height: auto;
       }
 
       .iconbox_pink {
@@ -433,9 +435,9 @@ body {
         text-align: left;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        width: 30vw;
     
         margin: auto;
-        margin-left: 30vw;
         margin-top: 120px;
       }
     

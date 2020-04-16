@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Weather</title>
+
+        <script src="keys.js"></script>
+
+        <script src="https://unpkg.com/@warnick/forecast-js/js/forecast.min.js" defer></script>
+        <link rel="stylesheet" href="https://unpkg.com/@warnick/forecast-js/css/forecast.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Yatra+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="/mine.css">
+
+        <link rel="stylesheet" href="/weatherappcopy.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;1,600&display=swap" rel="stylesheet">
+    </head>
+
+  <body>
+        <div class="results" id="app">
+            <input placeholder="zipcode" v-on:input="zip_trigger" name="name" id="zip" />
+            <div class="locationbox">
+                <h3 class="title">{{city}}, {{location.state}} <p id="zip_display"></p></h3>
+            </div>
+    
+            <div class="maincontentbox">
+                <div class="timeanddegree">
+                    <div class="degree">
+                        <p>C°/F°</p>
+                    </div>
+                    <div class="time">{{time.hour_12}}</div> 
+                        <!--<div class="time_morning">
+                            <p>10:30 am</p>
+                        </div>
+                        <div class="time_afternoon">
+                            <p>2:00 pm</p>
+                        </div>
+                        <div class="time_evening">
+                            <p>7:00 pm</p>
+                        </div> -->
+                    </div>
+                </div>
+    
+                <div class="daygreeting">
+                    <div class="daygreeting_morning">
+                        <p>good morning</p>
+                    </div>
+                    <div class="daygreeting_afternoon">
+                        <p>good afternoon</p>
+                    </div>
+                    <div class="daygreeting_evening">
+                        <p>good evening</p>
+                    </div>
+                </div>
+    
+                <div class="borderbox">
+                    <div class="whitebox">
+                        <div class="iconbox">
+                            <div class="iconbox_yellow">
+                                <img src="/img/01d_yellow.png" style="width:17em;" height:17em;/>
+                            </div>
+                            <div class="iconbox_pink">
+                                <img src="/img/09d_pink.png" style="width:12em;" height:17em;/>
+                            </div>
+                            <div class="iconbox_blue">
+                                <img src="/img/01n_blue.png" style="width:10em;" height:17em;/>
+                            </div>
+    
+    
+                        </div>
+                        <div class="dailytemp">
+                            <h1 class="title">{{current.temp.current}}</h1>
+                        </div>
+    
+                        <div class="dailyinfo">
+                                <div class="item">
+                                  <div class="label">Sunrise</div>
+                                  <div class="value">6:56am</div>
+                                </div>
+                          
+                                <div class="item">
+                                  <div class="label">Sunset</div>
+                                  <div class="value">7:45pm</div>
+                                </div>
+                          
+                                <div class="item">
+                                  <div class="label">Feels Like</div>
+                                  <div class="value">58</div>
+                                </div>
+                          
+                                <div class="item">
+                                  <div class="label">UV Index</div>
+                                  <div class="value">2</div>
+                                </div>
+                          
+                                <div class="item">
+                                  <div class="label">Humidity</div>
+                                  <div class="value">54%</div>
+                                </div>
+                          
+                                <div class="item">
+                                  <div class="label">Wind</div>
+                                  <div class="value">E 4 MPH</div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="highlightbox"></div>
+                <div class="weeklyinfo">
+                    <div class="daysofweek">
+                        <div class="daysofweek">
+                            <p>Tuesday</p>
+                        </div>
+                        <div class="daysofweek">
+                            <p>Wednesday</p>
+                        </div>
+                        <div class="daysofweek">
+                            <p>Thursday</p>
+                        </div>
+                        <div class="daysofweek">
+                            <p>Friday</p>
+                        </div>
+                        <div class="daysofweek">
+                            <p>Saturday</p>
+                        </div>
+                        <div class="daysofweek">
+                            <p>Sunday</p>
+                        </div>
+                    </div>
+    
+                    <div class="hilo">
+                        <div class="hilo_2">
+                            <p>65°|70°</p>
+                        </div>
+                        <div class="hilo_3">
+                            <p>58°|65°</p>
+                        </div>
+                        <div class="hilo_4">
+                            <p>67°|73°</p>
+                        </div>
+                        <div class="hilo_5">
+                            <p>76°|80°</p>
+                        </div>
+                        <div class="hilo_6">
+                            <p>78°|84°</p>
+                        </div>
+                        <div class="hilo_7">
+                            <p>77°|80°</p>
+                        </div>                  
+                    </div>
+    
+                    <div class="weeklyicons">
+                        <div class="weeklyicons_2">
+                            <img src="/img/01d_small.png" style="width:2em;" height:2em;/>
+                        </div>
+                        <div class="weeklyicons_3">
+                            <img src="/img/02d_small.png" style="width:2em;" height:2em;/>
+                        </div>
+                        <div class="weeklyicons_4">
+                            <img src="/img/01d_small.png" style="width:2em;" height:2em;/>
+                        </div>
+                        <div class="weeklyicons_5">
+                            <img src="/img/09d_small.png" style="width:2em;" height:2em;/>
+                        </div>
+                        <div class="weeklyicons_6">
+                            <img src="/img/02d_small.png" style="width:2em;" height:2em;/>
+                        </div>
+                        <div class="weeklyicons_7">
+                            <img src="/img/01d_small.png" style="width:2em;" height:2em;/>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+  </body>
+
+ </html>

@@ -9,146 +9,133 @@
         <title>Weather</title>
 
         <script src="keys.js"></script>
+        <script src="https://unpkg.com/@warnick/forecast-js/js/forecast.min.js" defer></script>
+        <link rel="stylesheet" href="https://unpkg.com/@warnick/forecast-js/css/forecast.css">
 
-        
 
         <link rel="stylesheet" href="/weatherapp.css">
+        
     </head>
 
     <body>
-        <input type="text" id="name_1" name="fname" placeholder="zipcode" />
 
-        <div class="locationbox">
-            <h3 class="title">LEAWOOD, KS</h3>
+        <div class="results" id="app">
+            <input placeholder="zipcode" v-on:input="zip_trigger" name="name" id="zip"/>
+
+            <div class="locationbox">
+                <h3 class="title">{{city}}, {{location.state}}</h3>
+            </div>
+
+            <div class="maincontentbox">
+                <div class="timeanddegree">
+                    <div class="degree">
+                        <p>C°/F°</p>
+                    </div>
+                    <div class="time">{{time.hour_12}}:{{time.minute}}</div>
+                </div>
+
+                <div class="daygreeting">
+                    <div class="daygreeting_morning">
+                        <p>good morning</p>
+                    </div>
+                    <div class="daygreeting_afternoon">
+                        <p>good afternoon</p>
+                    </div>
+                    <div class="daygreeting_evening">
+                        <p>good evening</p>
+                    </div>
+                </div>
+
+                <div class="borderbox">
+                    <div class="whitebox">
+                        <div class="iconbox">
+                            <div class="iconbox_yellow">
+                                <img src="/img/01d_yellow.png" style="width:17em; height:17em;"/>
+                            </div>
+                            <div class="iconbox_pink">
+                                <img src="/img/09d_pink.png" style="width:12em; height:12em;"/>
+                            </div>
+                            <div class="iconbox_blue">
+                                <img src="/img/01n_blue.png" style="width:10em; height:10em;"/>
+                            </div>
+
+
+                        </div>
+                        <div class="dailytemp">
+                            <h1 class="title">{{current.temp.current}}</h1>
+                        </div>
+
+                        <div class="dailyinfo">
+                            <div class="item">
+                                <div class="label">Sunrise</div>
+                                <div class="value">{{current.sunrise}}</div>
+                            </div>
+                            <div class="item">
+                                <div class="label">Sunset</div>
+                                <div class="value">{{current.sunset}}</div>
+                            </div>
+
+                            <div class="item">
+                                <div class="label">Feels Like</div>
+                                <div class="value">58°</div>
+                            </div>
+
+                            <div class="item">
+                                <div class="label">UV Index</div>
+                                <div class="value">{{current.uv}}</div>
+                            </div>
+
+                            <div class="item">
+                                <div class="label">Humidity</div>
+                                <div class="value">54%</div>
+                            </div>
+
+                            <div class="item">
+                                <div class="label">Wind</div>
+                                <div class="value">E 4mph</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weeklyinfo">
+                    <div class="dayofweek highlightbox">
+                        <div class="day">Tuesday</div>
+                        <div class="hilo">65°|70°</div>
+                        <div class="icon"><img src="/img/01d_small.png" style="width:2em; height:2em;"/></div>
+                    </div>
+
+                    <div class="dayofweek">
+                        <div class="day">Wednesday</div>
+                        <div class="hilo">58°|65°</div>
+                        <div class="icon"><img src="/img/02d_small.png" style="width:2.5em; height:1.8em;"/></div>
+                    </div>
+
+                    <div class="dayofweek">
+                        <div class="day">Thursday</div>
+                        <div class="hilo">67°|73°</div>
+                        <div class="icon"><img src="/img/01d_small.png" style="width:2em; height:2em;"/></div>
+                    </div>
+
+                    <div class="dayofweek">
+                        <div class="day">Friday</div>
+                        <div class="hilo">76°|80°</div>
+                        <div class="icon"><img src="/img/09d_small.png" style="width:2em; height:2em;"/></div>
+                    </div>
+
+                    <div class="dayofweek">
+                        <div class="day">Saturday</div>
+                        <div class="hilo">78°|84°</div>
+                        <div class="icon"><img src="/img/02d_small.png" style="width:2.5em; height:1.8em;"/></div>
+                    </div>
+
+                    <div class="dayofweek">
+                        <div class="day">Sunday</div>
+                        <div class="hilo">77°|80°</div>
+                        <div class="icon"><img src="/img/01d_small.png" style="width:2em; height:2em;"/></div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="maincontentbox">
-            <div class="timeanddegree">
-                <div class="degree">
-                    <p>C°/F°</p>
-                </div>
-                <div class="time">
-                    <div class="time_morning">
-                        <p>10:30 am</p>
-                    </div>
-                    <div class="time_afternoon">
-                        <p>2:00 pm</p>
-                    </div>
-                    <div class="time_evening">
-                        <p>7:00 pm</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="daygreeting">
-                <div class="daygreeting_morning">
-                    <p>good morning</p>
-                </div>
-                <div class="daygreeting_afternoon">
-                    <p>good afternoon</p>
-                </div>
-                <div class="daygreeting_evening">
-                    <p>good evening</p>
-                </div>
-            </div>
-
-            <div class="borderbox">
-                <div class="whitebox">
-                    <div class="iconbox">
-                        <div class="iconbox_yellow">
-                            <img src="/img/01d_yellow.png" style="width:17em; height:17em;"/>
-                        </div>
-                        <div class="iconbox_pink">
-                            <img src="/img/09d_pink.png" style="width:12em; height:12em;"/>
-                        </div>
-                        <div class="iconbox_blue">
-                            <img src="/img/01n_blue.png" style="width:10em; height:10em;"/>
-                        </div>
-
-
-                    </div>
-                    <div class="dailytemp">
-                        <h1 class="title">85°</h1>
-                    </div>
-
-                    <div class="dailyinfo">
-                        <div class="item">
-                            <div class="label">Sunrise</div>
-                            <div class="value">6:56 AM</div>
-                        </div>
-                        <div class="item">
-                            <div class="label">Sunset</div>
-                            <div class="value">7:45 PM</div>
-                        </div>
-
-                        <div class="item">
-                            <div class="label">Feels Like</div>
-                            <div class="value">58°</div>
-                        </div>
-
-                        <div class="item">
-                            <div class="label">UV Index</div>
-                            <div class="value">2</div>
-                        </div>
-
-                        <div class="item">
-                            <div class="label">Humidity</div>
-                            <div class="value">54%</div>
-                        </div>
-
-                        <div class="item">
-                            <div class="label">Wind</div>
-                            <div class="value">E 4mph</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="weeklyinfo">
-                <div class="dayofweek highlightbox">
-                    <div class="day">Tuesday</div>
-                    <div class="hilo">65°|70°</div>
-                    <div class="icon"><img src="/img/01d_small.png" style="width:2em; height:2em;"/></div>
-                </div>
-
-                <div class="dayofweek">
-                    <div class="day">Wednesday</div>
-                    <div class="hilo">58°|65°</div>
-                    <div class="icon"><img src="/img/02d_small.png" style="width:2.5em; height:1.8em;"/></div>
-                </div>
-
-                <div class="dayofweek">
-                    <div class="day">Thursday</div>
-                    <div class="hilo">67°|73°</div>
-                    <div class="icon"><img src="/img/01d_small.png" style="width:2em; height:2em;"/></div>
-                </div>
-
-                <div class="dayofweek">
-                    <div class="day">Friday</div>
-                    <div class="hilo">76°|80°</div>
-                    <div class="icon"><img src="/img/09d_small.png" style="width:2em; height:2em;"/></div>
-                </div>
-
-                <div class="dayofweek">
-                    <div class="day">Saturday</div>
-                    <div class="hilo">78°|84°</div>
-                    <div class="icon"><img src="/img/02d_small.png" style="width:2.5em; height:1.8em;"/></div>
-                </div>
-
-                <div class="dayofweek">
-                    <div class="day">Sunday</div>
-                    <div class="hilo">77°|80°</div>
-                    <div class="icon"><img src="/img/01d_small.png" style="width:2em; height:2em;"/></div>
-                </div>
-            </div>
-
-
-        </div>
-
-
-
-
-
-
-
     </body>
+</html>

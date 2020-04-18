@@ -124,29 +124,37 @@ body {
     color:rgb(236, 156, 17);
     text-align: left;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 
     margin: auto;
     margin-left: 30vw;
     margin-top: -240px;
   }
 
-  .dailyinfopart1 {
-    margin-bottom: -100px;
+  .item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    margin-top: 10px;
   }
 
-  .part1 {
-    margin-bottom: 50px;
-  }
-  .part2 {
-    margin-bottom: 50px;
+  .value {
+    font-weight: bold;
   }
 
   .weeklyinfo {
+    color: white;
+    margin-top: 100px;
+  }
+
+  .dayofweek {
       border: none;
       display: grid;
-      grid-template-columns: 2fr .2fr .2fr;
-      margin-top: 110px;
+      grid-template-columns: 1fr .5fr .5fr;
+      margin: auto;
+      margin-left: 150px;
+      margin-top: 10px;
+
       color: #FFFFFF;
   }
 
@@ -276,21 +284,13 @@ body {
         text-align: left;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        width: 30vw;
+        grid-gap: 10px;
+        font-size: 0.85em;
+        line-height: .5em;
+
+        padding: 30px;
+        margin: 30px;
     
-        margin: auto;
-        margin-top: 120px;
-      }
-    
-      .dailyinfopart1 {
-        margin-bottom: -100px;
-      }
-    
-      .part1 {
-        margin-bottom: 50px;
-      }
-      .part2 {
-        margin-bottom: 50px;
       }
 
       .iconbox_yellow {
@@ -307,12 +307,6 @@ body {
         padding-left: 30px;
       }
 
-      .weeklyinfo {
-          display: grid;
-          grid-template-columns: 2.75fr 1fr 2fr;
-          margin-left: 8vw;
-          line-height: 30px;
-      }
 
 
       .daysofweek {
@@ -403,6 +397,7 @@ body {
 
       .whitebox {
         height: auto;
+        background-color: rgba(253, 253, 253, 0.2);
       }
 
       .iconbox_pink {
@@ -423,25 +418,20 @@ body {
       }
 
       .dailyinfo {
-        color:#F87C56;
+        color:rgb(250, 119, 79);
         text-align: left;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        width: 30vw;
+        font-size: 0.9em;
+        line-height: .75em;
     
-        margin: auto;
-        margin-top: 120px;
+        margin: 30px;
+        margin-left: 65px;
+        margin-top: 70px;
       }
     
-      .dailyinfopart1 {
-        margin-bottom: -100px;
-      }
-    
-      .part1 {
-        margin-bottom: 50px;
-      }
-      .part2 {
-        margin-bottom: 50px;
+      .item {
+        margin-bottom: 20px;
       }
 
       .iconbox_yellow {
@@ -457,9 +447,6 @@ body {
         margin-left: 85px;
       }
 
-      .weeklyinfo {
-          margin-right: 50px;
-      }
 
 
       .daysofweek {

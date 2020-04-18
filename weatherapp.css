@@ -145,7 +145,7 @@ body {
   .weeklyinfo {
     color: white;
     margin-top: 100px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
   }
 
   .dayofweek {

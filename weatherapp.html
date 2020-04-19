@@ -103,13 +103,15 @@
                         <div class="day">{{forecast[1].weekday}}</div>
                         <div class="hilo">{{forecast[1].max_temp}}|{{forecast[1].min_temp}}</div>
                         <div class="icon">
-                            <img v-bind:src=" '/img/' + forecast[2].description_icon + '_small.png'" v-bind:alt="forecast[2].weather.description" style="width:2em; height:2em;"/>
+                            <img v-bind:src=" '/img/' + forecast[1].description_icon + '_small.png'" v-bind:alt="forecast[1].weather.description" style="width:2em; height:2em;"/>
                     </div>
 
                     <div class="dayofweek">
                         <div class="day">{{forecast[2].weekday}}</div>
                         <div class="hilo">{{forecast[2].max_temp}}|{{forecast[2].min_temp}}</div>
-                        <div class="icon"><img src="/img/02d_small.png" style="width:2.5em; height:1.8em;"/></div>
+                        <div class="icon"><img src="/img/02d_small.png" style="width:2.5em; height:1.8em;"/>
+                        <img v-bind:src=" '/img/' + forecast[2].description_icon + '_small.png' " v-bind:alt="forecast[2].weather.description" style="width:2.5em; height:1.8em;">
+                        </div>
                     </div>
 
                     <div class="dayofweek">

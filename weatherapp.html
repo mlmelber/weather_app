@@ -102,7 +102,7 @@
                     <div class="dayofweek highlightbox">
                         <div class="day">{{forecast[1].weekday}}</div>
                         <div class="hilo">{{forecast[1].max_temp}}|{{forecast[1].min_temp}}</div>
-                        <div class="icon"><img src="/img/01d_small.png" style="width:2em; height:2em;"/></div>
+                        <div v-bind:class="'icon_'+forecast[1].description_icon" class="icon"></div>
                     </div>
 
                     <div class="dayofweek">

@@ -1,3 +1,27 @@
+.icon_01d {
+  background-image: url(/img/01d_small.png);
+}
+
+.icon_02d {
+  background-image: url(/img/02d_small.png);
+}
+
+.icon_03d {
+  background-image: url(/img/03d_small);
+}
+
+.icon_9d {
+  background-image: url(/img/09d_small);
+}
+
+.icon_011d {
+  background-image: url(/img/011d_small);
+}
+
+.icon_13d {
+  background-image: url(/img/13d_small);
+}
+
 body {
     font-family: 'Raleway', sans-serif;
     background-color: #FAF8F0;

@@ -31,7 +31,7 @@
                     <div class="degree">
                         <p>C°/F°</p>
                     </div>
-                    <div class="time">{{time.hour_12}}:{{time.minute}}</div>
+                    <div class="time">{{time.hour_12}}:{{time.minute}}{{time.ampm}}</div>
                 </div>
 
                 <div class="daygreeting">
@@ -100,38 +100,38 @@
 
                 <div class="weeklyinfo">
                     <div class="dayofweek highlightbox">
-                        <div class="day">Tuesday</div>
-                        <div class="hilo">65°|70°</div>
+                        <div class="day">{{forecast[1].weekday}}</div>
+                        <div class="hilo">{{forecast[1].max_temp}}|{{forecast[1].min_temp}}</div>
                         <div class="icon"><img src="/img/01d_small.png" style="width:2em; height:2em;"/></div>
                     </div>
 
                     <div class="dayofweek">
-                        <div class="day">Wednesday</div>
-                        <div class="hilo">58°|65°</div>
+                        <div class="day">{{forecast[2].weekday}}</div>
+                        <div class="hilo">{{forecast[2].max_temp}}|{{forecast[2].min_temp}}</div>
                         <div class="icon"><img src="/img/02d_small.png" style="width:2.5em; height:1.8em;"/></div>
                     </div>
 
                     <div class="dayofweek">
-                        <div class="day">Thursday</div>
-                        <div class="hilo">67°|73°</div>
+                        <div class="day">{{forecast[3].weekday}}</div>
+                        <div class="hilo">{{forecast[3].max_temp}}/{{forecast[3].min_temp}}</div>
                         <div class="icon"><img src="/img/01d_small.png" style="width:2em; height:2em;"/></div>
                     </div>
 
                     <div class="dayofweek">
-                        <div class="day">Friday</div>
-                        <div class="hilo">76°|80°</div>
+                        <div class="day">{{forecast[4].weekday}}</div>
+                        <div class="hilo">{{forecast[4].max_temp}}/{{forecast[4].min_temp}}</div>
                         <div class="icon"><img src="/img/09d_small.png" style="width:2em; height:2em;"/></div>
                     </div>
 
                     <div class="dayofweek">
-                        <div class="day">Saturday</div>
-                        <div class="hilo">78°|84°</div>
+                        <div class="day">{{forecast[5].weekday}}</div>
+                        <div class="hilo">{{forecast[5].max_temp}}/{{forecast[5].min_temp}}</div>
                         <div class="icon"><img src="/img/02d_small.png" style="width:2.5em; height:1.8em;"/></div>
                     </div>
 
                     <div class="dayofweek">
-                        <div class="day">Sunday</div>
-                        <div class="hilo">77°|80°</div>
+                        <div class="day">{{forecast[6].weekday}}</div>
+                        <div class="hilo">{{forecast[5].max_temp}}/{{forecast[5].min_temp}}</div>
                         <div class="icon"><img src="/img/01d_small.png" style="width:2em; height:2em;"/></div>
                     </div>
                 </div>

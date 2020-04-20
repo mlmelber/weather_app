@@ -58,9 +58,8 @@
                             <div class="iconbox_blue">
                                 <img src="/img/01n_blue.png" style="width:10em; height:10em;"/>
                             </div>
-
-
                         </div>
+
                         <div class="dailytemp">
                             <h1 class="title">{{current.temp.current}}°</h1>
                         </div>
@@ -111,7 +110,7 @@
                         <div class="day">{{forecast[2].weekday}}</div>
                         <div class="hilo">{{forecast[2].max_temp}}|{{forecast[2].min_temp}}</div>
                         <div class="icon">
-                             <img v-bind:src=" '/img/' + forecast[2].description_icon + '_small.png' " v-bind:alt="forecast[2].weather.description" style="width:2em; height:2em;"/>
+                            <img v-bind:src=" '/img/' + forecast[3].description_icon + '_small.png'" v-bind:alt="forecast[3].weather.description" style="width:2em; height:2em;"/>
                             </div>
                     </div>
 

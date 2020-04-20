@@ -34,16 +34,23 @@
                     <div class="time">{{time.hour_12}}:{{time.minute}}{{time.ampm}}</div>
                 </div>
 
+                <div
+                class="meta_bar" 
+                v-bind:class="[
+                  time.hour_24 > 0 && time.hour_24 < 10 ? 'evening' : '', 
+                  time.hour_24 > 10 && time.hour_24 < 12 ? 'morning' : '', 
+                  time.hour_24 > 12 && time.hour_24 < 19 ? 'afternoon' : '', 
+                  time.hour_24 > 19 && time.hour_24 < 24 ? 'evening' : ''
+                  ]"
+              ></div>
+
                 <div class="daygreeting">
-                    <div class="daygreeting_morning">
-                        <p>good morning</p>
-                    </div>
-                    <div class="daygreeting_afternoon">
-                        <p>good afternoon</p>
-                    </div>
-                    <div class="daygreeting_evening">
-                        <p>good evening</p>
-                    </div>
+                    <p>
+                        good {{time.hour_24 > 0 && time.hour_24 < 10 ? 'evening' : ''}}
+                        {{time.hour_24 > 10 && time.hour_24 < 12 ? 'morning' : ''}}
+                        {{time.hour_24 > 12 && time.hour_24 < 19 ? 'afternoon' : ''}}
+                        {{time.hour_24 > 19 && time.hour_24 < 24 ? 'evening' : ''}}
+                    </p>
                 </div>
 
                 <div class="borderbox">
@@ -110,7 +117,7 @@
                         <div class="day">{{forecast[2].weekday}}</div>
                         <div class="hilo">{{forecast[2].max_temp}}|{{forecast[2].min_temp}}</div>
                         <div class="icon">
-                            <img v-bind:src=" '/img/' + forecast[3].description_icon + '_small.png'" v-bind:alt="forecast[3].weather.description" style="width:2em; height:2em;"/>
+                            <img v-bind:src=" '/img/' + forecast[2].description_icon + '_small.png'" v-bind:alt="forecast[2].weather.description" style="width:2em; height:2em;"/>
                             </div>
                     </div>
 
@@ -140,7 +147,7 @@
 
                     <div class="dayofweek">
                         <div class="day">{{forecast[6].weekday}}</div>
-                        <div class="hilo">{{forecast[5].max_temp}}|{{forecast[5].min_temp}}</div>
+                        <div class="hilo">{{forecast[6].max_temp}}|{{forecast[6].min_temp}}</div>
                         <div class="icon">
                             <img v-bind:src=" '/img/' + forecast[6].description_icon + '_small.png'" v-bind:alt="forecast[6].weather.description" style="width:2em; height:2em;"/>
                             </div>

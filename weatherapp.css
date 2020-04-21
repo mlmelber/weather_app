@@ -13,15 +13,15 @@ body {
     margin-bottom: 50px;
   }
 
-  .morning {
+  .maincontentbox.morning {
     background: linear-gradient(to bottom, #f5f1e5 29%, #f3a916 100%);
   }
 
-  .afternoon {
+  .maincontentbox.afternoon {
     background: linear-gradient(to bottom, #ffe9db 0%, #fa4c17 100%);  
   }
 
-  .evening {
+  .maincontentbox.evening {
     background: linear-gradient(to bottom, #bac2e9 0%, #131527 100%);  
   }
 
@@ -30,6 +30,18 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+
+  .icon_01d.morning {
+    background-image: url("/img/01d_yellow.png");
+  }
+
+  .icon_01d.afternoon {
+    background-image: url("/img/01d_pink.png");
+  }
+
+  .icon_01d.evening {
+    background-image: url("/img/01d_blue.png");
   }
   
   .icon_02d {
@@ -134,8 +146,19 @@ body {
   .daygreeting {
     font-size: 4em;
     font-weight: 1000;
-    color: #EFAF42;
     margin-left: 100px;
+  }
+
+  .daygreeting.morning {
+    color: #EFAF42;
+  }
+
+  .daygreeting.afternoon {
+    color: #EB6D47;
+  }
+
+  .daygreeting.evening {
+    color: #1E2957;
   }
 
   .borderbox {
@@ -384,17 +407,6 @@ body {
     /* Tablet Styles */
     @media screen and (max-width: 1024px) and (min-width: 768px) {
 
-      .morning {
-        background: linear-gradient(to bottom, #f5f1e5 29%, #f3a916 100%);
-      }
-    
-      .afternoon {
-        background: linear-gradient(to bottom, #ffe9db 0%, #fa4c17 100%);  
-      }
-    
-      .evening {
-        background: linear-gradient(to bottom, #bac2e9 0%, #131527 100%);  
-      }
 
       h3 {
         text-align: center;

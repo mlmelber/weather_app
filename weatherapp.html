@@ -26,7 +26,14 @@
                 <h3 class="title">{{city}}, {{location.state}}</h3>
             </div>
 
-            <div class="maincontentbox">
+            <div class="maincontentbox" 
+            v-bind:class="[
+            time.hour_24 > 0 && time.hour_24 < 10 ? 'evening' : '', 
+            time.hour_24 > 10 && time.hour_24 < 12 ? 'morning' : '', 
+            time.hour_24 > 12 && time.hour_24 < 19 ? 'afternoon' : '', 
+            time.hour_24 > 19 && time.hour_24 < 24 ? 'evening' : ''
+            ]"
+            >
                 <div class="timeanddegree">
                     <div class="degree">
                         <p>°F</p>
@@ -34,17 +41,14 @@
                     <div class="time">{{time.hour_12}}:{{time.minute}}{{time.ampm}}</div>
                 </div>
 
-                <div
-                class="meta_bar"
+                <div class="daygreeting"
                 v-bind:class="[
-                  time.hour_24 > 0 && time.hour_24 < 10 ? 'evening' : '', 
-                  time.hour_24 > 10 && time.hour_24 < 12 ? 'morning' : '', 
-                  time.hour_24 > 12 && time.hour_24 < 19 ? 'afternoon' : '', 
-                  time.hour_24 > 19 && time.hour_24 < 24 ? 'evening' : ''
-                  ]"
-              ></div>
-
-                <div class="daygreeting">
+                time.hour_24 > 0 && time.hour_24 < 10 ? 'evening' : '', 
+                time.hour_24 > 10 && time.hour_24 < 12 ? 'morning' : '', 
+                time.hour_24 > 12 && time.hour_24 < 19 ? 'afternoon' : '', 
+                time.hour_24 > 19 && time.hour_24 < 24 ? 'evening' : ''
+                ]"
+                >
                     <p>
                         good {{time.hour_24 > 0 && time.hour_24 < 10 ? 'evening' : ''}}
                         {{time.hour_24 > 10 && time.hour_24 < 12 ? 'morning' : ''}}
@@ -55,17 +59,14 @@
 
                 <div class="borderbox">
                     <div class="whitebox">
-                        <div class="iconbox">
-                            <div class="iconbox_yellow">
-                                <img v-bind:src=" '/img/' + forecast[0].description_icon + '_yellow.png'" v-bind:alt="forecast[0].weather.description" style="width:17em; height:17em;"/>
-                            </div>
-                            <div class="iconbox_pink">
-                                <img v-bind:src=" '/img/' + forecast[0].description_icon + '_pink.png'" v-bind:alt="forecast[0].weather.description" style="width:12em; height:12em;"/>
-                            </div>
-                            <div class="iconbox_blue">
-                                <img v-bind:src=" '/img/' + forecast[0].description_icon + '_blue.png'" v-bind:alt="forecast[0].weather.description" style="width:10em; height:10em;"/>
-                            </div>
-                        </div>
+                        <div class="iconbox"
+                        v-bind:class="[
+                        time.hour_24 > 0 && time.hour_24 < 10 ? 'evening' : '', 
+                        time.hour_24 > 10 && time.hour_24 < 12 ? 'morning' : '', 
+                        time.hour_24 > 12 && time.hour_24 < 19 ? 'afternoon' : '', 
+                        time.hour_24 > 19 && time.hour_24 < 24 ? 'evening' : ''
+                        ]"
+                        >
 
                         <div class="dailytemp">
                             <h1 class="title">{{current.temp.current}}°</h1>

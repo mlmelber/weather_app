@@ -22,7 +22,14 @@
         <div class="results" id="app">
             <input placeholder="zipcode" v-on:input="zip_trigger" name="name" id="zip"/>
 
-            <div class="locationbox">
+            <div class="locationbox"
+            v-bind:class="[
+            time.hour_24 > 0 && time.hour_24 < 10 ? 'evening' : '', 
+            time.hour_24 > 10 && time.hour_24 < 12 ? 'morning' : '', 
+            time.hour_24 > 12 && time.hour_24 < 19 ? 'afternoon' : '', 
+            time.hour_24 > 19 && time.hour_24 < 24 ? 'evening' : ''
+            ]"
+            >
                 <h3 class="title">{{city}}, {{location.state}}</h3>
             </div>
 
@@ -34,7 +41,14 @@
             time.hour_24 > 19 && time.hour_24 < 24 ? 'evening' : ''
             ]"
             >
-                <div class="timeanddegree">
+                <div class="timeanddegree"
+                v-bind:class="[
+                time.hour_24 > 0 && time.hour_24 < 10 ? 'evening' : '', 
+                time.hour_24 > 10 && time.hour_24 < 12 ? 'morning' : '', 
+                time.hour_24 > 12 && time.hour_24 < 19 ? 'afternoon' : '', 
+                time.hour_24 > 19 && time.hour_24 < 24 ? 'evening' : ''
+                ]"
+                >
                     <div class="degree">
                         <p>°F</p>
                     </div>
@@ -67,12 +81,27 @@
                         time.hour_24 > 19 && time.hour_24 < 24 ? 'evening' : ''
                         ]"
                         >
+                        </div>
 
-                        <div class="dailytemp">
+                        <div class="dailytemp"
+                        v-bind:class="[
+                        time.hour_24 > 0 && time.hour_24 < 10 ? 'evening' : '', 
+                        time.hour_24 > 10 && time.hour_24 < 12 ? 'morning' : '', 
+                        time.hour_24 > 12 && time.hour_24 < 19 ? 'afternoon' : '', 
+                        time.hour_24 > 19 && time.hour_24 < 24 ? 'evening' : ''
+                        ]"
+                        >
                             <h1 class="title">{{current.temp.current}}°</h1>
                         </div>
 
-                        <div class="dailyinfo">
+                        <div class="dailyinfo"
+                        v-bind:class="[
+                        time.hour_24 > 0 && time.hour_24 < 10 ? 'evening' : '', 
+                        time.hour_24 > 10 && time.hour_24 < 12 ? 'morning' : '', 
+                        time.hour_24 > 12 && time.hour_24 < 19 ? 'afternoon' : '', 
+                        time.hour_24 > 19 && time.hour_24 < 24 ? 'evening' : ''
+                        ]"
+                        >
                             <div class="item">
                                 <div class="label">Sunrise</div>
                                 <div class="value">{{current.sunrise}}</div>

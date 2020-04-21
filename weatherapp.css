@@ -11,6 +11,7 @@ body {
     padding: 0;
 
     margin-bottom: 50px;
+    padding-top: 5px;
   }
 
   .maincontentbox.morning {
@@ -18,7 +19,7 @@ body {
   }
 
   .maincontentbox.afternoon {
-    background: linear-gradient(to bottom, #ffe9db 0%, #fa4c17 100%);  
+    background: linear-gradient(to bottom, #ffede2 10%, #fa4c17 100%);  
   }
 
   .maincontentbox.evening {
@@ -385,7 +386,6 @@ body {
     margin: 0;
     margin-right: 20px;
     padding: 0ex;
-    padding-bottom: 20px;
   }
 
   .locationbox.morning {
@@ -414,7 +414,7 @@ body {
 
     margin-top: 0;
     padding: 0;
-    margin-right: 10px;
+    margin-right: -30px;
     margin-left: 10px;
   }
 
@@ -540,7 +540,7 @@ body {
     color:rgb(236, 156, 17);
   }
   .dailyinfo.afternoon {
-    color:rgb(250, 119, 79);
+    color:rgb(241, 110, 70);
   }
   .dailyinfo.evening {
     color:#1E2957;

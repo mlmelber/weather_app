@@ -522,19 +522,18 @@ body {
 
     margin: auto;
     padding: auto;
-    margin-left: 10vw;
-    margin-top: -190px;
+    margin-left: 9vw;
+    margin-top: 50px;
   }
 
   .dailyinfo {
-    color:rgb(236, 156, 17);
     text-align: left;
     display: grid;
     grid-template-columns: 1fr;
 
     margin: auto;
     margin-left: 30vw;
-    margin-top: -240px;
+    margin-top: 70px;
   }
 
   .dailyinfo.morning {
@@ -603,7 +602,6 @@ body {
         text-align: center;
         font-weight: 300;
         letter-spacing: 12px;
-        color: #303960;
     
         font-size: 1em;
         margin: 0;
@@ -624,14 +622,12 @@ body {
       .degree {
         font-size: 1em;
         font-weight: 600;
-        color: #1E2957;
         margin-bottom: 0;
       }
     
       .time {
         font-size: 1em;
         font-weight: 600;
-        color: #1E2957;
         margin-top: 0;
       }
 
@@ -678,7 +674,6 @@ body {
       h1 {
         font-size: 4em;
         font-weight: bolder;
-        color: #1E2957;
     
         margin: auto;
         padding: auto;

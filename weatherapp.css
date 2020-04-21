@@ -43,13 +43,67 @@ body {
   .icon_01d.evening {
     background-image: url("/img/01d_blue.png");
   }
+
+  .icon_01n {
+    background-image: url("/img/01n.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .icon_01n.morning {
+    background-image: url("/img/01d_yellow.png");
+  }
+
+  .icon_01n.afternoon {
+    background-image: url("/img/01d_pink.png");
+  }
+
+  .icon_01n.evening {
+    background-image: url("/img/01d_blue.png");
+  }
   
+
+
   .icon_02d {
     background-image: url("/img/02d.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
+
+  .icon_02d.morning {
+    background-image: url("/img/02d_yellow.png");
+  }
+
+  .icon_02d.afternoon {
+    background-image: url("/img/02d_pink.png");
+  }
+
+  .icon_02d.evening {
+    background-image: url("/img/02d_blue.png");
+  }
+
+  .icon_02n {
+    background-image: url("/img/02d.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .icon_02n.morning {
+    background-image: url("/img/02d_yellow.png");
+  }
+
+  .icon_02n.afternoon {
+    background-image: url("/img/02d_pink.png");
+  }
+
+  .icon_02n.evening {
+    background-image: url("/img/02d_blue.png");
+  }
+
+
   
   .icon_03d {
     background-image: url("/img/03d.png");
@@ -57,6 +111,39 @@ body {
     background-position: center;
     background-size: cover;
   }
+
+  .icon_03d.morning {
+    background-image: url("/img/03d_yellow.png");
+  }
+
+  .icon_03d.afternoon {
+    background-image: url("/img/03d_pink.png");
+  }
+
+  .icon_03d.evening {
+    background-image: url("/img/03d_blue.png");
+  }
+
+  .icon_03n {
+    background-image: url("/img/03d.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .icon_03n.morning {
+    background-image: url("/img/03d_yellow.png");
+  }
+
+  .icon_03n.afternoon {
+    background-image: url("/img/03d_pink.png");
+  }
+
+  .icon_03n.evening {
+    background-image: url("/img/03d_blue.png");
+  }
+
+
   
   .icon_04d {
     background-image: url("/img/04d.png");
@@ -64,6 +151,39 @@ body {
     background-position: center;
     background-size: cover;
   }
+
+  .icon_04d.morning {
+    background-image: url("/img/04d_yellow.png");
+  }
+
+  .icon_04d.afternoon {
+    background-image: url("/img/04d_pink.png");
+  }
+
+  .icon_04d.evening {
+    background-image: url("/img/04d_blue.png");
+  }
+
+  .icon_04n {
+    background-image: url("/img/04d.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .icon_04n.morning {
+    background-image: url("/img/04d_yellow.png");
+  }
+
+  .icon_04n.afternoon {
+    background-image: url("/img/04d_pink.png");
+  }
+
+  .icon_04n.evening {
+    background-image: url("/img/04d_blue.png");
+  }
+
+
   
   .icon_09d {
     background-image: url("/img/09d.png");
@@ -71,6 +191,39 @@ body {
     background-position: center;
     background-size: cover;
   }
+
+  .icon_09d.morning {
+    background-image: url("/img/09d_yellow.png");
+  }
+
+  .icon_09d.afternoon {
+    background-image: url("/img/09d_pink.png");
+  }
+
+  .icon_09d.evening {
+    background-image: url("/img/09d_blue.png");
+  }
+
+  .icon_09n {
+    background-image: url("/img/09d.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .icon_09n.morning {
+    background-image: url("/img/09d_yellow.png");
+  }
+
+  .icon_09n.afternoon {
+    background-image: url("/img/09d_pink.png");
+  }
+
+  .icon_09n.evening {
+    background-image: url("/img/09d_blue.png");
+  }
+
+
   
   .icon_10d {
     background-image: url("/img/10d.png");
@@ -78,6 +231,39 @@ body {
     background-position: center;
     background-size: cover;
   }
+
+  .icon_10d.morning {
+    background-image: url("/img/10d_yellow.png");
+  }
+
+  .icon_10d.afternoon {
+    background-image: url("/img/10d_pink.png");
+  }
+
+  .icon_10d.evening {
+    background-image: url("/img/10d_blue.png");
+  }
+
+  .icon_10n {
+    background-image: url("/img/10d.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .icon_10n.morning {
+    background-image: url("/img/10d_yellow.png");
+  }
+
+  .icon_10n.afternoon {
+    background-image: url("/img/10d_pink.png");
+  }
+
+  .icon_10n.evening {
+    background-image: url("/img/10d_blue.png");
+  }
+
+
   
   .icon_11d {
     background-image: url("/img/11d.png");
@@ -85,6 +271,39 @@ body {
     background-position: center;
     background-size: cover;
   }
+
+  .icon_11d.morning {
+    background-image: url("/img/11d_yellow.png");
+  }
+
+  .icon_11d.afternoon {
+    background-image: url("/img/11d_pink.png");
+  }
+
+  .icon_11d.evening {
+    background-image: url("/img/11d_blue.png");
+  }
+
+  .icon_11n {
+    background-image: url("/img/11d.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .icon_11n.morning {
+    background-image: url("/img/11d_yellow.png");
+  }
+
+  .icon_11n.afternoon {
+    background-image: url("/img/11d_pink.png");
+  }
+
+  .icon_11n.evening {
+    background-image: url("/img/11d_blue.png");
+  }
+
+
   
   .icon_13d {
     background-image: url("/img/13d.png");
@@ -92,6 +311,38 @@ body {
     background-position: center;
     background-size: cover;
   }
+  .icon_13d.morning {
+    background-image: url("/img/13d_yellow.png");
+  }
+
+  .icon_13d.afternoon {
+    background-image: url("/img/13d_pink.png");
+  }
+
+  .icon_13d.evening {
+    background-image: url("/img/13d_blue.png");
+  }
+
+  .icon_13n {
+    background-image: url("/img/13d.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .icon_13n.morning {
+    background-image: url("/img/13d_yellow.png");
+  }
+
+  .icon_13n.afternoon {
+    background-image: url("/img/13d_pink.png");
+  }
+
+  .icon_13n.evening {
+    background-image: url("/img/13d_blue.png");
+  }
+
+
   
   .icon_50d {
     background-image: url("/img/50d.png");
@@ -99,18 +350,62 @@ body {
     background-position: center;
     background-size: cover;
   }
+  .icon_50d.morning {
+    background-image: url("/img/50d_yellow.png");
+  }
+
+  .icon_50d.afternoon {
+    background-image: url("/img/50d_pink.png");
+  }
+
+  .icon_50d.evening {
+    background-image: url("/img/50d_blue.png");
+  }
+
+  .icon_50n {
+    background-image: url("/img/50d.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .icon_50n.morning {
+    background-image: url("/img/50d_yellow.png");
+  }
+
+  .icon_50n.afternoon {
+    background-image: url("/img/50d_pink.png");
+  }
+
+  .icon_50n.evening {
+    background-image: url("/img/50d_blue.png");
+  }
+
+  .locationbox {
+    margin: 0;
+    margin-right: 20px;
+    padding: 0ex;
+    padding-bottom: 20px;
+  }
+
+  .locationbox.morning {
+    color: #A86A00;
+  }
+
+  .locationbox.afternoon {
+    color: #F8A991;
+  }
+
+  .locationbox.evening {
+    color: #303960;
+  }
 
   h3 {
     text-align: right;
     font-weight: 200;
     letter-spacing: 12px;
-    color: #A86A00;
 
     font-size: 1.2em;
-    margin: 0;
-    margin-right: 20px;
-    padding: 0ex;
-    padding-bottom: 20px;
   }
 
   .timeanddegree {
@@ -123,15 +418,25 @@ body {
     margin-left: 10px;
   }
 
+  .timeanddegree.morning {
+    color: #EFAF42;
+  }
+
+  .timeanddegree.afternoon {
+    color: #F87C56;
+  }
+
+  .timeanddegree.evening {
+    color: #1E2957;
+  }
+
   .degree {
     font-size: 1.5em;
-    color: #EFAF42;
     margin: 0;
   }
 
   .time {
     font-size: 2em;
-    color: #EFAF42;
     margin: 0;
   }
 
@@ -199,10 +504,21 @@ body {
       position: absolute;
   }
 
+  .dailytemp.morning {
+    color: #EDA831;
+  }
+
+  .dailytemp.afternoon {
+    color: #F87C56;
+  }
+
+  .dailytemp.evening {
+    color: #1E2957;
+  }
+
   h1 {
     font-size: 6em;
     font-weight: bolder;
-    color: #EDA831;
 
     margin: auto;
     padding: auto;
@@ -219,6 +535,16 @@ body {
     margin: auto;
     margin-left: 30vw;
     margin-top: -240px;
+  }
+
+  .dailyinfo.morning {
+    color:rgb(236, 156, 17);
+  }
+  .dailyinfo.afternoon {
+    color:rgb(250, 119, 79);
+  }
+  .dailyinfo.evening {
+    color:#1E2957;
   }
 
   .item {
@@ -272,18 +598,6 @@ body {
   }
 
   @media screen and (max-width: 767px) {
-
-    .morning {
-      background: linear-gradient(to bottom, #f5f1e5 29%, #f3a916 100%);
-    }
-  
-    .afternoon {
-      background: linear-gradient(to bottom, #ffe9db 0%, #fa4c17 100%);  
-    }
-  
-    .evening {
-      background: linear-gradient(to bottom, #bac2e9 0%, #131527 100%);  
-    }
 
     h3 {
         text-align: center;

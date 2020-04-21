@@ -57,13 +57,13 @@
                     <div class="whitebox">
                         <div class="iconbox">
                             <div class="iconbox_yellow">
-                                <img src="/img/01d_yellow.png" style="width:17em; height:17em;"/>
+                                <img v-bind:src=" '/img/' + forecast[0].description_icon + '_yellow.png'" v-bind:alt="forecast[0].weather.description" style="width:17em; height:17em;"/>
                             </div>
                             <div class="iconbox_pink">
-                                <img src="/img/09d_pink.png" style="width:12em; height:12em;"/>
+                                <img v-bind:src=" '/img/' + forecast[0].description_icon + '_pink.png'" v-bind:alt="forecast[0].weather.description" style="width:12em; height:12em;"/>
                             </div>
                             <div class="iconbox_blue">
-                                <img src="/img/01n_blue.png" style="width:10em; height:10em;"/>
+                                <img v-bind:src=" '/img/' + forecast[0].description_icon + '_blue.png'" v-bind:alt="forecast[0].weather.description" style="width:10em; height:10em;"/>
                             </div>
                         </div>
 

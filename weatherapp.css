@@ -484,9 +484,9 @@ body {
 
   .iconbox {
       margin-left: 3.5vw;
-      margin-top: 30px;
-      height: 250px;
-      width: 250px;
+      margin-top: 40px;
+      height: 290px;
+      width: 290px;
 
       position: absolute;
   }
@@ -514,7 +514,7 @@ body {
     margin: auto;
     padding: auto;
     margin-left: 9vw;
-    margin-top: 100px;
+    margin-top: 110px;
   }
 
   .dailyinfo {
@@ -626,13 +626,25 @@ body {
         margin-top: 0;
       }
 
-      .daygreeting_evening {
+      .daygreeting {
         display: inline-block;
         position: absolute;
-        font-size: .3em;
+        font-size: 1.3em;
         font-weight: 50;
         color: #FFFFFF;
         margin-left: 18vw;
+      }
+
+      .daygreeting.morning {
+        color: #FFFFFF;
+      }
+    
+      .daygreeting.afternoon {
+        color: #FFFFFF;
+      }
+    
+      .daygreeting.evening {
+        color: #FFFFFF;
       }
 
       .borderbox {
@@ -739,18 +751,22 @@ body {
       .daygreeting {
         display: inline-block;
         position: absolute;
-      }
-
-      .daygreeting_afternoon {
-        display: inline-block;
-        font-size: .5em;
+        font-size: 1em;
         font-weight: 50;
         color: #FFFFFF;
         margin-left: 30vw;
       }
 
-      .daygreeting_morning {
-          display: none;
+      .daygreeting.morning {
+        color: #FFFFFF;
+      }
+    
+      .daygreeting.afternoon {
+        color: #FFFFFF;
+      }
+    
+      .daygreeting.evening {
+        color: #FFFFFF;
       }
 
       .borderbox {
@@ -760,14 +776,13 @@ body {
       }
 
       .whitebox {
-        height: auto;
         background-color: rgba(253, 253, 253, 0.2);
       }
 
-      .iconbox_pink {
-        display: inline-block;
+      .iconbox {
         margin-left: 12vw;
-        margin-top: 40px;
+        height: 130px;
+        width: 130px;
       }
 
       h1 {
@@ -777,7 +792,7 @@ body {
         margin: auto;
         padding: auto;
         margin-left: 20vw;
-        margin-top: -165px;
+        margin-top: 100px;
       }
 
       .dailyinfo {

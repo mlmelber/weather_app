@@ -707,7 +707,6 @@ body {
         text-align: center;
         font-weight: 300;
         letter-spacing: 12px;
-        color: #F8A991;
     
         font-size: 1.2em;
         margin: 0;
@@ -728,14 +727,12 @@ body {
       .degree {
         font-size: 1.2em;
         font-weight: 600;
-        color: #F87C56;
         margin-bottom: 0;
       }
     
       .time {
         font-size: 1.2em;
         font-weight: 600;
-        color: #F87C56;
         margin-top: 0;
       }
 
@@ -776,7 +773,6 @@ body {
       h1 {
         font-size: 5em;
         font-weight: bolder;
-        color: #F87C56;
     
         margin: auto;
         padding: auto;
@@ -785,7 +781,6 @@ body {
       }
 
       .dailyinfo {
-        color:rgb(250, 119, 79);
         text-align: left;
         display: grid;
         grid-template-columns: 1fr 1fr;

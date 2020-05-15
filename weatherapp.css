@@ -637,14 +637,17 @@ body {
 
       .daygreeting.morning {
         color: #FFFFFF;
+        margin-left: 200px;
       }
     
       .daygreeting.afternoon {
         color: #FFFFFF;
+        margin-left: 200px;
       }
     
       .daygreeting.evening {
         color: #FFFFFF;
+        margin-left: 200px;
       }
 
       .borderbox {
@@ -660,6 +663,15 @@ body {
         background-color: rgba(253, 253, 253, 0.1);
       }
 
+      .iconbox {
+        margin-left: 3.5vw;
+        margin-top: -10px;
+        height: 290px;
+        width: 250px;
+  
+        position: absolute;
+    }
+
       .iconbox_blue {
         display: inline-block;
         margin-left: 6vw;
@@ -673,11 +685,10 @@ body {
         margin: auto;
         padding: auto;
         margin-left: 22vw;
-        margin-top: -120px;
+        margin-top: 120px;
       }
 
       .dailyinfo {
-        color:#1E2957;
         text-align: left;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -687,7 +698,7 @@ body {
 
         padding: 30px;
         margin: 0px;
-        margin-top: 25px;
+        margin-top: 270px;
         column-gap: 50px;
     
       }
@@ -731,8 +742,9 @@ body {
           display: block;
           padding-left: 60vw;
           position: absolute;
-          margin-top: 230px;
           line-height: 5px;
+          margin-top: 100px;
+          margin-left: 5vw;
       }
     
 
@@ -759,14 +771,17 @@ body {
 
       .daygreeting.morning {
         color: #FFFFFF;
+        margin-left: 400px;
       }
     
       .daygreeting.afternoon {
         color: #FFFFFF;
+        margin-left: 400px;
       }
     
       .daygreeting.evening {
         color: #FFFFFF;
+        margin-left: 400px;
       }
 
       .borderbox {
@@ -781,8 +796,8 @@ body {
 
       .iconbox {
         margin-left: 12vw;
-        height: 130px;
-        width: 130px;
+        height: 200px;
+        width: 200px;
       }
 
       h1 {
@@ -804,7 +819,7 @@ body {
     
         margin: 30px;
         margin-left: 65px;
-        margin-top: 70px;
+        margin-top: 200px;
       }
     
       .item {
